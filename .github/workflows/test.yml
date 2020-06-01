@@ -27,8 +27,7 @@ jobs:
     # Install Node Modules
     - uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: install
-        args: --frozen-lockfile
+        cmd: install --frozen-lockfile
 
     # Runs a set of commands using the runners shell
     - name: runs unit tests
